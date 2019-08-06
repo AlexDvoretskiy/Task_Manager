@@ -1,0 +1,81 @@
+.root {
+    -fx-background-size: 100% 100%;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+ .textFlow {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+
+.veryHighPriority {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #fff0f0;
+    -fx-border-color: #dbb1b1;
+}
+
+.highPriority {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #ffeaa3;
+    -fx-border-color: #ffce2e;
+}
+
+.mediumPriority {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #c7e1ff;
+    -fx-border-color: #3895ff;
+}
+
+.lowPriority {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #c7ffcc;
+    -fx-border-color: #47fc56;
+}
+
+.closedNoteColor {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #e3e3e3;
+}
+
+.noteText {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 15;
+}
+
+.info {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12;
+    -fx-font-style: italic;
+}
+
+.date {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12;
+}
+
+.doneButton:hover {
+    -fx-background-color: linear-gradient(#73ff7c, #b3ffb8);
+}
+
+.deleteButton:hover {
+    -fx-background-color: linear-gradient(#fc9d9e, #ffdede);
+}
+
+
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TaskManager.StatisticWindow.StatisticController">
+    <stylesheets><URL value="@/CSS/StatisticWindowStyle.css" /></stylesheets>
+
+    <top>
+        <Label fx:id="quantityLabel" text="Всего: ">
+         <padding>
+            <Insets left="20.0" />
+         </padding></Label>
+    </top>
+
+    <center>
+        <HBox>
+        <PieChart fx:id="pieChart" title="Задачи по приоритету" />
+
+        <AreaChart fx:id="areaChart" title="Активность по дням">
+            <xAxis>
+                <CategoryAxis label="Дата" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Количество задач" />
+            </yAxis>
+        </AreaChart>
+        </HBox>
+    </center>
+
+    <bottom>
+        <HBox>
+            <Region prefWidth="770" />
+            <Button fx:id="closeButton" onAction="#closeWindow" text="Закрыть" />
+        </HBox>
+    </bottom>
+</BorderPane>

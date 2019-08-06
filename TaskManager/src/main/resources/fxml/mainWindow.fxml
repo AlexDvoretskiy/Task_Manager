@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TaskManager.MainWindow.MainController">
+    <stylesheets><URL value="@/CSS/MainWindowStyle.css" /></stylesheets>
+    <top>
+        <HBox>
+            <Button fx:id="updateButton" onAction="#updateMainWindow" text="Обновить окно" />
+            <Button fx:id="closeAllButton" onAction="#closeAllNotes" text="Закрыть все задачи" />
+            <Button fx:id="deleteAllButton" onAction="#deleteAllNotes" text="Удалить все задачи" />
+            <Button fx:id="editButton" onAction="#editNotes" text="Редактировать" />
+            <Region prefWidth="30" HBox.hgrow="ALWAYS" />
+            <Button fx:id="exportButton" onAction="#exportToExcel" text="Выгрузить" />
+            <Button fx:id="statisticButton" onAction="#getStatistics" text="Статистика" />
+            <Region prefWidth="10" HBox.hgrow="ALWAYS" />
+            <Button fx:id="assistantWindow" onAction="#initAssistantWindow" />
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane>
+            <VBox fx:id="MainWindow" />
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+        </ScrollPane>
+    </center>
+
+    <right>
+        <VBox fx:id="AddTaskArea" prefWidth="300">
+            <Label prefHeight="32.0" styleClass="headerNewTask" text="Новая задача" />
+            <TextArea fx:id="taskNameArea" prefHeight="110.0" prefWidth="300.0" promptText="Введите описание задачи" wrapText="true">
+            <VBox.margin>
+               <Insets right="5.0" />
+            </VBox.margin>
+            </TextArea>
+            <Label alignment="BOTTOM_CENTER" prefHeight="38.0" styleClass="headerPriority" text="Приоритет" />
+            <Group>
+                <VBox alignment="CENTER_LEFT" prefHeight="106.0" prefWidth="135.0" spacing="5">
+                <RadioButton fx:id="VeryHighPriority" text="Очень высокий" />
+                <RadioButton fx:id="HighPriority" text="Высокий" />
+                <RadioButton fx:id="MediumPriority" selected="true" text="Средний" />
+                <RadioButton fx:id="LowPriority" text="Низкий" />
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+                </VBox>
+            </Group>
+            <Label prefHeight="32.0" styleClass="headerDate" text="Дата заведения" />
+            <DatePicker fx:id="StartDate" />
+            <Label alignment="BOTTOM_LEFT" prefHeight="37.0" styleClass="headerDate" text="Дата окончания" />
+            <DatePicker fx:id="EndDate" />
+            <Label text="" />
+            <Button fx:id="AddTaskButton" onAction="#addNote" text="Добавить" />
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+        </VBox>
+    </right>
+
+    <bottom>
+        <HBox>
+            <CheckBox fx:id="showClosedNotes" selected="true" text="Скрыть закрытые записи" />
+        </HBox>
+    </bottom>
+
+</BorderPane>

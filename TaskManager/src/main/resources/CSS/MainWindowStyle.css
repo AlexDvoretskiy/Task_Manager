@@ -1,0 +1,113 @@
+.root {
+    -fx-background-size: 100% 100%;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.text-area {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18;
+}
+
+ .textFlow {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+}
+
+.headerNewTask {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 22;
+    -fx-font-style: italic;
+}
+
+.headerPriority {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 20;
+    -fx-font-style: italic;
+}
+
+.headerDate {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18;
+    -fx-font-style: italic;
+}
+
+.veryHighPriority {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #fff0f0;
+    -fx-border-color: #dbb1b1;
+}
+
+.highPriority {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #ffeaa3;
+    -fx-border-color: #ffce2e;
+}
+
+.mediumPriority {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #c7e1ff;
+    -fx-border-color: #3895ff;
+}
+
+.lowPriority {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #c7ffcc;
+    -fx-border-color: #47fc56;
+}
+
+.closedNoteColor {
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-background-color: #e3e3e3;
+}
+
+.noteText {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 20;
+}
+
+.info {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 16;
+    -fx-font-style: italic;
+}
+
+.date {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 15;
+}
+
+.doneButton:hover {
+    -fx-background-color: linear-gradient(#73ff7c, #b3ffb8);
+}
+
+.editButton:hover {
+    -fx-background-color: linear-gradient(#a9a6ff, #e1e0ff);
+}
+
+.deleteButton:hover {
+    -fx-background-color: linear-gradient(#fc9d9e, #ffdede);
+}
+
+.addButton:hover {
+    -fx-background-color: linear-gradient(#2bbd3a, #45ed56);
+}
+
+
+
+
